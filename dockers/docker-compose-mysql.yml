@@ -11,7 +11,7 @@ services:
   member-service:
     image : member-service
     ports:
-      - "8081:8080" # container 에서 8080, host 에서 8081
+      - "8081:8080" # container 에서 8080, host 에서 8081 로 지정해서 connect
     # mysql-service 가 뜨고 난 후 실행 설정
     depends_on:
       - mysql-service
